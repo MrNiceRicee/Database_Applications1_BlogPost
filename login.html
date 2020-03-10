@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Registered Users login</title>
+		<style type="text/css">
+			body {
+				text-align: center;
+			}
+			input {
+				font-style: italic;
+			}
+			.loginfo{
+				font: bolder, arial, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<article>
+			<h3>Welcome back!</h3> Log in down below<br>
+			<hr>
+		</article>
+		<form action="loginHandler.php" method = "POST">
+			<article class = "loginfo">
+				Username<br>
+				<input name="username" type="text" placeholder="Enter username" /><br>
+				Password <br>
+				<input name="password" type="password" placeholder="Enter password"/><br>
+				<br>
+			</article>
+
+			<input name="Submit" type="submit"/><br>
+			<br>
+		
+		</form>
+	</body>
+	<footer>
+		<hr>
+		<a href="index.html"> Back to home page? </a>
+	</footer>
+</html>

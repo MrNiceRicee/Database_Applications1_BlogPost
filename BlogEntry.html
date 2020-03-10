@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Logged In Blog</title>
+		
+		<style type="text/css">
+
+			body {
+				text-align: center;
+			}
+			input[type=text] {
+				width: 130px;
+				box-sizing: border-box;
+			    border: 2px solid #ccc;
+			    border-radius: 4px;
+			    font-size: 16px;
+			    padding: 12px;
+			    transition: width .4s;
+			    transition-timing-function: ease-in-out;
+			}
+			textarea {
+				width: 250px;
+				height: 150px;
+				box-sizing: border-box;
+			    border: 2px solid #ccc;
+			    border-radius: 4px;
+			    font-size: 16px;
+  				resize: none;
+  				text-align: left;
+  				overflow: hidden;
+  				transition: height .8s;
+			    transition-timing-function: ease-in-out;
+				
+			}
+			textarea[name="blogBody"]{
+
+			}
+  			input[type=text]:focus{
+  				width: 250px;
+  			}
+  			input[name="blogTitle"]{
+  				font-weight: bold;
+  			}textarea[name="blogBody"]:focus {
+				height: 300px;
+				
+			}
+		
+		</style>
+	</head>
+	<body>
+		<form action="blogHandler.php" method = "POST">
+			
+			<h2> Your blog! </h2>
+			Entry<br>
+			<input name="blogTitle" type="text" placeholder="Title"/><br>
+			<textarea name="blogBody" placeholder="Thoughts" maxlength = "140"></textarea>
+			<br>
+			<input name="Submit" type="submit"/><br>
+
+		
+		</form>	
+		<footer>
+			<br>
+			<br>
+			<hr>			
+			<a href="index.html"> Back to home page? </a>
+		</footer>
+	</body>
+</html>

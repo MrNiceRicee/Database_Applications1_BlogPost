@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<meta name = "description" content="some tutorials ">
+		<title>Tutorial website</title>
+		<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		/* Create three equal columns that floats next to each other */
+		div.columnleft {
+			position: static;
+			display: inline-block;
+			width: 10%;
+			margin-bottom: 0px;
+		    margin-left: 0px;
+		    margin-right: 100px;
+		    margin-top: 0px;
+			padding-bottom: 0px;
+		    padding-left: 0px;
+		    padding-right: 0px;
+		    padding-top: 0px;
+			height: 300px; /* Should be removed. Only for demonstration */
+		}
+		div.columnmiddle {
+			display: inline-block;
+			left: 100px;
+			width: 25%;
+			margin-bottom: 0px;
+		    margin-left: 0px;
+		    margin-right: 0px;
+		    margin-top: 0px;
+			padding-bottom: 0px;
+		    padding-left: 0px;
+		    padding-right: 0px;
+		    padding-top: 0px;
+			height: 300px; /* Should be removed. Only for demonstration */
+		}
+		div.columnright {
+			display: inline-block;
+			left: 20%;
+			width: 30%;
+			margin-bottom: 0px;
+		    margin-left: 0px;
+		    margin-right: 0px;
+		    margin-top: 0px;
+			padding-bottom: 0px;
+		    padding-left: 0px;
+		    padding-right: 0px;
+		    padding-top: 0px;
+			padding: 0px;
+			height: 300px; /* Should be removed. Only for demonstration */
+		}
+		
+		/* Clear floats after the columns */
+		.row{
+			width: 100%;
+		}
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		div.topic{
+			width: 100%;
+			height: 50px;
+			background-color: blue;
+		}
+		
+		</style>
+	</head>
+	<body style = "background-color: rgba(30,90,150,.15);">
+		<header>
+			<h4>THIS IS A HEADER</h4>
+		</header>
+		<main>
+			THIS IS THE MAIN
+		<div class="row">
+			<div class="columnleft" style="background-color:#aaa;">
+		  		<h2 style="">Column 1</h2>
+		  		<p>Some text..</p>
+		  	</div>
+		  	<div class="columnmiddle" style="background-color:#bbb;">
+		  		<h2>Column 2</h2>
+		  		<p>Some text..</p>
+		  		<div class ="topic">
+		  			<span>hello!</span>
+		  		</div>
+		  	</div>
+		  	<div class="columnright" style="background-color:#ccc;">
+		    	<h2>Column 3</h2>
+		    	<p>Some text..</p>
+		  	</div>
+		</div>
+		</main>
+								
+		<footer>
+			THIS IS A FOOT
+		</footer>
+	</body>
+
+</html>
