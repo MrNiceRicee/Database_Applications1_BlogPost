@@ -62,15 +62,15 @@
     			</a>
 			</h4>
 		</header>
-		
+
 
 
 <?php
 //Credentials for accessing the database
-$dbservername="localhost";
-$dbusername="root";
-$dbpassword = "root";
-$dbname = "fridaynotes_1.10.2020";
+$dbservername="blogpostserver.mysql.database.azure.com";
+$dbusername="admin1@blogpostserver";
+$dbpassword = "Pass123!";
+$dbname = "blogdatabasesql";
 $bID = "";
 $bTitle = "";
 $bContent = "";
@@ -108,7 +108,7 @@ if ($result->num_rows > 0){         //check if it works
     				<div class = "blogtitle">
     					<div class= "bloop">
     					<b><?php echo $bTitle?></b>
-    						
+
     					</div>
     				    Author: <?php echo $bName?>
     				    <br>
@@ -117,7 +117,7 @@ if ($result->num_rows > 0){         //check if it works
     			</ul>
     			<article style ="color:#484848">
     				<!--Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum rutrum sodales. Nullam mattis fermentum libero, non volutpat.
-    		             -->	
+    		             -->
     		        <?php echo $bContent?>
     			</article>
     		</nav>
@@ -126,7 +126,7 @@ if ($result->num_rows > 0){         //check if it works
     	<br>
     	<br>
 
-<?php 
+<?php
     $someint = $someint +1;
     }
 }elseif($result->num_rows ==0){
@@ -139,12 +139,10 @@ $conn->close();
 ?>
 
 
-			
-		
+
+
 		<footer>
-			
+
 		</footer>
 	</body>
 </html>
-	
-	
