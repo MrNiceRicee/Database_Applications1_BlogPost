@@ -71,6 +71,7 @@ $dbservername="blogpostserver.mysql.database.azure.com";
 $dbusername="admin1@blogpostserver";
 $dbpassword = "Pass123!";
 $dbname = "blogdatabasesql";
+
 $bID = "";
 $bTitle = "";
 $bContent = "";
