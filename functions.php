@@ -1,20 +1,20 @@
 <?php
 function dbconnect(){
     //Credentials for accessing the database
-    $dbservername="localhost";
-    $dbusername="root";
-    $dbpassword = "root";
-    $dbname = "fridaynotes_1.10.2020";
-    
+    $dbservername="blogpostserver.mysql.database.azure.com";
+    $dbusername="admin1@blogpostserver";
+    $dbpassword = "Pass123!";
+    $dbname = "blogdatabasesql";
+
     //create connection
     $conn = new mysqli($dbservername, $dbusername, $dbpassword, $dbname);
-    
+
     if ($conn ->connect_error)
     {
-        die("Connection failed: " . $conn->connect_error);    
+        die("Connection failed: " . $conn->connect_error);
     }
     return $conn;
-    
+
 }
 
 
