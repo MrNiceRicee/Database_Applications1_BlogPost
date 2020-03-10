@@ -81,7 +81,7 @@ $bName = "";
 
 //create connection
 //$con=mysqli_init(); mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL); mysqli_real_connect($con, "blogpostserver.mysql.database.azure.com", "admin1@blogpostserver", {your_password}, {your_database}, 3306);
-$conn=mysqli_init(); mysqli_ssl_set($conn, NULL, NULL, {ca-cert filename}, NULL, NULL); mysqli_real_connect($con, {$dbservername}, {$dbusername}, {$dbpassword}, {$dbname}, 3306);
+$conn=mysqli_init(); mysqli_ssl_set($conn, NULL, NULL, {ca-cert filename}, NULL, NULL); mysqli_real_connect($conn, {$dbservername}, {$dbusername}, {$dbpassword}, {$dbname}, 3306);
 
 //$conn = new mysqli($dbservername, $dbusername, $dbpassword, $dbname);
 
