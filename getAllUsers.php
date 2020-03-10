@@ -6,7 +6,7 @@
     $dbname = "blogdatabasesql";
 
     //create connection
-    $conn = new mysqli($dbservername, $dbusername, $dbpassword, $dbname);
+    $conn = new mysqli($dbservername, $dbusername, $dbpassword, $dbname,3306);
 
     if ($conn ->connect_error)
     {
