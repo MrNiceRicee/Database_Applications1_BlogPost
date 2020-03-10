@@ -1,20 +1,20 @@
 <?php
     //Credentials for accessing the database
-    $dbservername="localhost";
-    $dbusername="root";
-    $dbpassword = "root";
-    $dbname = "fridaynotes_1.10.2020";
-    
+    $dbservername="blogpostserver.mysql.database.azure.com";
+    $dbusername="admin1@blogpostserver";
+    $dbpassword = "Pass123!";
+    $dbname = "blogdatabasesql";
+
     //create connection
     $conn = new mysqli($dbservername, $dbusername, $dbpassword, $dbname);
-    
+
     if ($conn ->connect_error)
     {
         die("Connection failed: " . $conn->connect_error);
     }
-    
+
     $sql = "SELECT USER_ID, FIRST_NAME, LAST_NAME FROM users";        //sql select all of these things, FROM the users table
-    
+
     $result = $conn->query($sql);
     if ($result->num_rows > 0){         //check if it works
         //Loop through the users that returned from the database
