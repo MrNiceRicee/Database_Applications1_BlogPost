@@ -92,6 +92,8 @@ if ($conn ->connect_error)
 
 $sql = "SELECT BLOG_ID, BLOG_TITLE, BLOG_CONTENT, BLOG_DATE, USER_ID, NAME FROM blogs";        //sql select all of these things, FROM the users table
 
+
+
 $result = $conn->query($sql);
 if ($result->num_rows > 0){         //check if it works
     //Loop through the users that returned from the database
