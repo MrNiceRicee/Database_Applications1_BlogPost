@@ -6,16 +6,16 @@
 //     $dbusername="root";
 //     $dbpassword = "root";
 //     $dbname = "fridaynotes_1.10.2020";
-    
+
 //     //create connection
 //     $conn = new mysqli($dbservername, $dbusername, $dbpassword, $dbname);
-    
+
 //     if ($conn ->connect_error)
 //     {
 //         die("Connection failed: " . $conn->connect_error);
 //     }
 //     return $conn;
-    
+
 // }
 require_once 'functions.php';
 include 'header.php';
@@ -37,7 +37,10 @@ $sql = "INSERT INTO blogs (BLOG_TITLE, BLOG_CONTENT , USER_ID ,NAME)
         VALUES('" .$blogTitle. "', '" .$blogBody. "','" .$userid. "','" .$authorName."')";
 
 if($conn->query($sql) == TRUE){
-    echo "Your Blog has been posted!";
+    ?>
+    <p> Your Blog has been posted! </p>
+    <a href="index.html"> Back to home page? </a>
+    <?php
 }else{
     echo "Error " .$sql. "<br>" . $conn->error;
 }

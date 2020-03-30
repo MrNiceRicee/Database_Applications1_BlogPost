@@ -1,9 +1,9 @@
 <?php
     //Credentials for accessing the database
-    $dbservername="blogpostserver.mysql.database.azure.com";
-    $dbusername="admin1@blogpostserver";
-    $dbpassword = "Pass123!";
-    $dbname = "blogdatabasesql";
+    $dbservername="localhost";
+    $dbusername="root";
+    $dbpassword = "root";
+    $dbname = "fridaynotes_1.10.2020";
 
     //create connection
     $conn = new mysqli($dbservername, $dbusername, $dbpassword, $dbname,3306);
